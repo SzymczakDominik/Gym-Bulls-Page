@@ -49,7 +49,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url(/img/dumbbels-small.jpg);
+		background-image: url(./img/dumbbels-small.jpg);
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -76,6 +76,6 @@ header {
 }
 @media (min-width: 576px) {
 	.hero-img {
-		background-image: url(/img/dumbbels-big.jpg);
+		background-image: url(./img/dumbbels-big.jpg);
 	}
 }
