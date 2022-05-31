@@ -1,0 +1,81 @@
+@import 'colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+.blue-text {
+	color: $blue-color;
+}
+
+nav {
+	text-transform: uppercase;
+	width: 100%;
+	a.navbar-brand,
+	i {
+		color: $white;
+	}
+	// a.nav-link.active {
+	// 	color: #fff;
+	a.nav-link {
+		color: $white;
+	}
+	.nav-link:hover {
+		color: $blue-color;
+	}
+	.navbar-brand {
+		font-weight: bold;
+	}
+	.active {
+		color: $blue-color;
+	}
+	.fa-bars {
+		padding: 10px;
+	}
+}
+header {
+	color: $white;
+	h1 {
+		text-transform: uppercase;
+	}
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url(/img/dumbbels-small.jpg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: -2;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: $background-color;
+		z-index: -5;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: #fff;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+	}
+}
+@media (min-width: 576px) {
+	.hero-img {
+		background-image: url(/img/dumbbels-big.jpg);
+	}
+}
