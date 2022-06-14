@@ -155,7 +155,7 @@ header .fa-chevron-down {
 
 .aboutus-hero {
   position: relative;
-  background-image: url(/img/salat-small.jpg);
+  background-image: url("../img/salat-small.jpg");
   background-position: center;
   background-size: cover;
   color: #ddd;
@@ -310,7 +310,7 @@ header .fa-chevron-down {
     height: 82px;
   }
   .aboutus-hero {
-    background-image: url(/img/salat-medium.jpg);
+    background-image: url("../img/salat-medium.jpg");
   }
 }
 

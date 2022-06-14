@@ -138,7 +138,7 @@ header {
 
 .aboutus-hero {
 	position: relative;
-	background-image: url(/img/salat-small.jpg);
+	background-image: url('../img/salat-small.jpg');
 	background-position: center;
 	background-size: cover;
 	color: $light-gray;
@@ -261,7 +261,7 @@ header {
 		height: 82px;
 	}
 	.aboutus-hero {
-		background-image: url(/img/salat-medium.jpg);
+		background-image: url('../img/salat-medium.jpg');
 	}
 }
 
