@@ -61,6 +61,31 @@ nav {
 	}
 }
 
+.aboutus-hero {
+	position: relative;
+	background-image: url('../img/salat-small.jpg');
+	background-position: center;
+	background-size: cover;
+	color: $light-gray;
+	z-index: 0;
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+	.aboutus-hero-item {
+		margin: 10px 0;
+		i {
+			font-size: 36px;
+		}
+		.aboutus-hero-title {
+			font-size: 24px;
+		}
+	}
+}
 header {
 	color: $white;
 
@@ -136,31 +161,6 @@ header {
 	}
 }
 
-.aboutus-hero {
-	position: relative;
-	background-image: url('../img/salat-small.jpg');
-	background-position: center;
-	background-size: cover;
-	color: $light-gray;
-	z-index: 0;
-	.aboutus-shadow {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.6);
-		z-index: -5;
-	}
-	.aboutus-hero-item {
-		margin: 10px 0;
-		i {
-			font-size: 36px;
-		}
-		.aboutus-hero-title {
-			font-size: 24px;
-		}
-	}
-}
 .training {
 	.carousel {
 		transform: scale(0.9);
@@ -195,7 +195,7 @@ header {
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 		text-align: center;
 		background-color: #fff;
-		transition: transform .3s;
+		transition: transform 0.3s;
 		h4 {
 			color: $main-color;
 			text-transform: uppercase;
@@ -229,12 +229,12 @@ header {
 .team {
 	background-color: $light-gray;
 	.card {
-		transform: scale(.8);
+		transform: scale(0.8);
 	}
-.card-footer {
-	display: flex;
-	justify-content: space-between;
-}
+	.card-footer {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 @media (min-width: 375px) {
 	header {
@@ -250,7 +250,7 @@ header {
 
 @media (min-width: 768px) {
 	header {
-				p {
+		p {
 			font-size: 20px;
 		}
 	}
