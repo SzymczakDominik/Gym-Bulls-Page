@@ -136,6 +136,106 @@ header {
 	}
 }
 
+.aboutus-hero {
+	position: relative;
+	background-image: url(/img/salat-small.jpg);
+	background-position: center;
+	background-size: cover;
+	color: $light-gray;
+	z-index: 0;
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+	.aboutus-hero-item {
+		margin: 10px 0;
+		i {
+			font-size: 36px;
+		}
+		.aboutus-hero-title {
+			font-size: 24px;
+		}
+	}
+}
+.training {
+	.carousel {
+		transform: scale(0.9);
+	}
+	.carousel-item {
+		position: relative;
+		height: 730px;
+	}
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		// background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+.prices {
+	.price-text {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.button {
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+	}
+	.bord {
+		margin: 20px 10px;
+		padding: 30px;
+		height: 400px;
+		width: 300px;
+		border: 0 solid;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		text-align: center;
+		background-color: #fff;
+		transition: transform .3s;
+		h4 {
+			color: $main-color;
+			text-transform: uppercase;
+		}
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+		.underline-small {
+			margin: 0 auto 40px;
+			width: 220px;
+			height: 1px;
+			background-color: $light-gray;
+		}
+	}
+	.bord:hover {
+		transform: scale(1.05);
+	}
+	.price-info {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 20px;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+.team {
+	background-color: $light-gray;
+	.card {
+		transform: scale(.8);
+	}
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+}
+}
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -150,18 +250,18 @@ header {
 
 @media (min-width: 768px) {
 	header {
-		h1 {
-			font-size: 42px;
-		}
-
-		p {
+				p {
 			font-size: 20px;
 		}
 	}
 }
+
 @media (min-width: 992px) {
-	html {
-		scroll-padding-top: 72px;
+	nav {
+		height: 82px;
+	}
+	.aboutus-hero {
+		background-image: url(/img/salat-medium.jpg);
 	}
 }
 
