@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="sass/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/88e7a6aab4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,12 +45,12 @@
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
-                <h1>Witaj w gym <span class="blue-text">bulls</span></h1>
-                <p>W miejscu, gdzie pomagamy tworzyć sportowe sylwetki z pasją</p>
-                <a href="#aboutus" type="button" class="btn btn-outline-light">poznaj nas</a>
+                <h1 data-aos="fade-up" data-aos-delay="200">Witaj w gym <span class="blue-text">bulls</span></h1>
+                <p data-aos="fade-up" data-aos-delay="400">W miejscu, gdzie pomagamy tworzyć sportowe sylwetki z pasją</p>
+                <a data-aos="fade-up" data-aos-delay="600" href="#aboutus" type="button" class="btn btn-outline-light">poznaj nas</a>
             </div>
 
-            <a href="#aboutus"><i class="fas fa-chevron-down"></i></a>
+            <a href="#aboutus"><i class="fas fa-chevron-down bounce-top"></i></a>
 
         </div>
     </header>
@@ -60,22 +61,22 @@
                 <h2>o nas</h2>
                 <div class="underline"></div>
                 <div class="row justify-content-center">
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="100">
                         <p><i class="fa-solid fa-plate-wheat"></i></p>
                         <p class="aboutus-card-title mb-1">Dietetyka</p>
                         <p class="aboutus-card-text">Tworzymy indywidualne plany dietetyczne.</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="200">
                         <p><i class="fa-solid fa-dumbbell"></i></p>
                         <p class="aboutus-card-title mb-1">Plan treningowy</p>
                         <p class="aboutus-card-text">Rozpisujemy indywidualne plany treningowe.</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="300">
                         <p><i class="fa-solid fa-book-medical"></i></p>
                         <p class="aboutus-card-title mb-1">Blog prozdrowotny</p>
                         <p class="aboutus-card-text">Piszemy artykuły o tematyce żywieniowej.</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="400">
                         <p><i class="fa-solid fa-champagne-glasses"></i></p>
                         <p class="aboutus-card-title mb-1">Stały kontakt</p>
                         <p class="aboutus-card-text">Zachowujemy świetne relacje z naszymi klientami.</p>
@@ -127,7 +128,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="../img/man-training-small.jpg" class="card-img-top"
+                        <img src="../img/man-training-big.jpg" class="card-img-top"
                             alt="A man doing squat with barbell">
                         <div class="card-body">
                             <h5 class="card-title">Sylwetka kulturystyczna</h5>
@@ -192,7 +193,7 @@
                     <p>Plan żywieniowy
                     </p>
                     <p>Konsultacje</p>
-                    <p class="price-text">99zł</p>
+                    <p class="price-text">399zł</p>
                     <button type="button" class="btn btn-secondary btn1">Zamawiam</button>
                 </div>
                 <div class="col-sm-6 col-md-4 text-center prices-hover bord">
@@ -215,9 +216,9 @@
                     </p>
                     <p>Konsultacje</p>
 
-                    <p class="price-text">149zł</p><button type="button" class="btn btn-primary btn3">Zamawiam</button>
+                    <p class="price-text">449zł</p><button type="button" class="btn btn-primary btn3">Zamawiam</button>
                 </div>
-                <p class="price-info">Skorzystaj z jednego z trzech pakietów lub <a href="url">skontaktuj
+                <p class="price-info">Skorzystaj z jednego z trzech pakietów lub <a href="#contact">skontaktuj
                         się</a> z nami i ustal warunki indywidualne!</p>
             </div>
 
@@ -226,8 +227,8 @@
             <h2>team</h2>
             <div class="underline"></div>
             <div class="row justify-content-center">
-                <div class="team-box">
-                    <div class="card-group">
+                <div class="team-box" >
+                    <div class="card-group team-carousel">
                         <div class="card">
                             <img src="../img/ceo.jpg" class="card-img-top" alt="ceo in suit">
                             <div class="card-body">
@@ -236,8 +237,9 @@
                                     fizyczna to coś w czym czuję się najlepiej.” </p>
                             </div>
                             <div class="card-footer d-flex justify-content-around">
-                                <small class="text-muted"><i class="fa-brands fa-facebook-f"></i><i
-                                        class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i></small>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                         <div class="card">
@@ -248,37 +250,119 @@
                                     Razem z zespołem natychmiast ci pomożemy!”</p>
                             </div>
                             <div class="card-footer d-flex justify-content-around">
-                                <small class="text-muted"><i class="fa-brands fa-facebook-f"></i><i
-                                        class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i></small>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                         <div class="card">
                             <img src="../img/dietetic.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dietetyk</h5>
-                                <p class="card-text">„Nie ma wśród żywności świętego grala. Nauczę cię dobrych nawyków, które przyniosą pozytywne efekty. - Zapraszam! ”</p>
+                                <p class="card-text">„Zjadłaś ciastko z napisem fit a dupa dalej rośnie? Spoko ;) nie
+                                    takie komody wyszły z nami na ludzi. - Zapraszam! ”</p>
                             </div>
                             <div class="card-footer d-flex justify-content-around">
-                                <small class="text-muted"><i class="fa-brands fa-facebook-f"></i><i
-                                        class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i></small>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="team-shadow"></div>
+
+        </section>
+
+        <section id="achievements" class="achievements py-5">
+            <h2>osiągnięcia</h2>
+            <div class="underline"></div>
+
+            <div class="container">
+                <div class="row justify-content-center text-center achievements-list">
+
+                    <div class="col-md-6 col-lg-6 col-xl-4 achievement" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-thumbs-up"></i>
+                        <p class="achievement-number">100%</p>
+                        <p class="achievement-text">zadowolonych klientów</p>
+                    </div>
+                  
+                   
+                    <div class="col-md-6 col-lg-6 col-xl-4 achievement" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="far fa-building"></i>
+                        <p class="achievement-number">1</p>
+                        <p class="achievement-text">nowoczesne biuro</p>
+                    </div>
+                   
+                    <div class="col-md-6 col-lg-6 col-xl-4 achievement" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fas fa-share-alt"></i>
+                        <p class="achievement-number">80.000</p>
+                        <p class="achievement-text">fanów w social media</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact py-5">
+
+            <h2>kontakt</h2>
+            <div class="underline"></div>
+            <div class="container">
+                <div class="row text-center contact-us">
+                    
+                    <div class="col-sm-6 col-lg-4 contact-item order-1">
+                        <h3>Adres placówki</h3>
+                        <p>ul.Krakowska</p>
+                        <p>00-000 Kraków</p>
+                        <p>+48 000 000 000</p>
+                        <p>mail@mail.pl</p>
+                    </div>
+                    <div class="col-lg-4 order-0 order-lg-1">
+                        <div class=""></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 contact-item order-1">
+                        <h3>social media</h3>
+                        <div class="social-media contact-item order-1">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contact-shadow"></div>
         </section>
 
 
     </main>
 
+<footer class="bg-dark text-light py-4 text-center">
+    <p class="mb-0">&copy;2022 | Gym Bulls</p>
+</footer>
 
 
 
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
         </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slicksettings.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            StartEvent: 'DOMContentLoaded',
+            offset:200,
+            once:true
+        });
+      </script>
     <script src="js/script.js"></script>
 </body>
 
